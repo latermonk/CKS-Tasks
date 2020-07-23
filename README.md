@@ -1,3 +1,7 @@
+# 前情概要 https://github.com/latermonk/k8s-Tasks
+
+
+
 # CKS-Tasks
 
 ## Announce  && Training 
