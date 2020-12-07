@@ -16,3 +16,9 @@ https://training.linuxfoundation.org/certification/certified-kubernetes-security
 
 ###   How to prepare for the upcoming Certified Kubernetes Security Specialist (CKS)
 https://blog.nativecloud.dev/how-to-prepare-for-the-upcoming-cks-certification/    
+
+
+
+#  CKS meterrial   
+
+Certified Kubernetes Security Specialist   
