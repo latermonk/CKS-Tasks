@@ -54,7 +54,7 @@ systemctl enable kubelet && systemctl start kubelet
 ### init k8s
 rm /root/.kube/config
 kubeadm reset -f
-kubeadm init --kubernetes-version=${KUBE_VERSION} --ignore-preflight-errors=NumCPU --skip-token-print
+kubeadm init --apiserver-advertise-address=192.168.1.101   --kubernetes-version=${KUBE_VERSION} --ignore-preflight-errors=NumCPU --skip-token-print
 
 mkdir -p ~/.kube
 sudo cp -i /etc/kubernetes/admin.conf ~/.kube/config
