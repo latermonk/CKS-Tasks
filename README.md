@@ -1,3 +1,17 @@
+#  ShortCut 
+
+## CHEETSHEET    
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/      
+
+
+##  Short 
+https://github.com/ahmetb/kubectx     
+
+
+
+
+
+
 # 前情概要    
 https://github.com/latermonk/k8s-Tasks
 
