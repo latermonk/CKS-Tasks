@@ -7,6 +7,11 @@ https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 ##  Short 
 https://github.com/ahmetb/kubectx     
 
+https://github.com/sbstp/kubie    
+
+
+
+
 
 
 
