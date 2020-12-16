@@ -5,7 +5,7 @@
 
 ```
 >  sudo -i
-bash <(curl -s https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-Exam-Series-By-Kim/01/install_controlplane.sh) >  
+bash <(curl -s https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-Exam-Series-By-Kim/01/install_controlplane.sh) > 
 exit
 sudo -i # login again to get nicer bash with autocompletion
 ```
