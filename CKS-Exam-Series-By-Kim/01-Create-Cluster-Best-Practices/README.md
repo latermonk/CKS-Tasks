@@ -5,7 +5,7 @@
 
 ```
 >  sudo -i
-bash <(curl -s https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-Exam-Series-By-Kim/01/install_controlplane.sh) > 
+bash <(curl -s https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-Exam-Series-By-Kim/01-Create-Cluster-Best-Practices/install_controlplane.sh) > 
 exit
 sudo -i # login again to get nicer bash with autocompletion
 ```
@@ -18,7 +18,7 @@ sudo -i # login again to get nicer bash with autocompletion
 exit
 sudo -i # login again to get nicer bash with autocompletion
 ```
-**如果沒有再次打印：**
+**Print the command again if ：**
 
 ```
 kubeadm token create -—print-join-command —-ttl 0
