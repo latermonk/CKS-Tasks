@@ -1,3 +1,14 @@
+# REFERENCe    
+
+
+
+https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist   
+
+
+
+
+
+
 #  ShortCut 
 
 ## CHEETSHEET    
