@@ -12,6 +12,18 @@ https://www.katacoda.com/
 https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist   
 
 
+https://github.com/ibrahimjelliti/CKSS-Certified-Kubernetes-Security-Specialist   
+
+
+https://github.com/echoboomer/k8s-cks-notes  
+
+
+https://github.com/abdennour/certified-kubernetes-security-specialist   
+
+
+
+
+
 
 
 
