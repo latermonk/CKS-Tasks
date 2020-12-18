@@ -21,6 +21,11 @@ https://github.com/echoboomer/k8s-cks-notes
 https://github.com/abdennour/certified-kubernetes-security-specialist   
 
 
+https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide     
+
+
+
+
 
 
 
