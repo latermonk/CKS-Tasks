@@ -1,3 +1,9 @@
+
+#   Reference:  
+https://github.com/knabben/k8s-labs/tree/main/CKS       
+
+
+
 #  Ansible playbook     
 
 https://github.com/Kubeinit/kubeinit    
