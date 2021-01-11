@@ -72,6 +72,14 @@ kubectl create secret generic -n metallb-system memberlist --from-literal=secret
 configuration   
 https://metallb.universe.tf/configuration/   
 
+
+
+```
+wget  https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/MetalLb/l2.yaml
+
+```
+
+
 ```
 apiVersion: v1
 kind: ConfigMap
