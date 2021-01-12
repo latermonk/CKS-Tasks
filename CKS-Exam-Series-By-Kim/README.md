@@ -9,9 +9,15 @@ https://itnext.io/cks-exam-series-1-create-cluster-security-best-practices-50e35
 ## 02   Pods, Secrets and ServiceAccounts
 https://itnext.io/cks-exam-series-2-pods-and-secrets-3d92a6fba331
 
+## 03   Immutable Pods
+https://itnext.io/cks-exam-series-3-immutable-pods-3812cf76cff4
+
+## 04  Crash that Apiserver !
+https://itnext.io/cks-exam-series-4-crash-that-apiserver-5f4d3d503028
 
 
-
+## 05  ImagePolicyWebhook
+https://itnext.io/cks-exam-series-5-imagepolicywebhook-8d09f1ceee70
 
 -----
 
