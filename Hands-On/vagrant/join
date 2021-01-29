@@ -1,0 +1,1 @@
+kubeadm join cluster-master:6443 --token xd6st2.2qtypdwztr73jpon     --discovery-token-ca-cert-hash sha256:b547aa85dfcb0957f875263f242e1aded9cf562379d44b98152903840a9c37c0 
