@@ -1,5 +1,7 @@
-https://github.com/Microsoft/SDN/tree/master/Kubernetes/linux/vagrant      
-
+#   k8s编译
+https://docs.microsoft.com/zh-cn/virtualization/windowscontainers/kubernetes/compiling-kubernetes-binaries    
+https://github.com/Microsoft/SDN/tree/master/Kubernetes/linux/vagrant        
+  
 
 #  HELM Charts LIBL
 
