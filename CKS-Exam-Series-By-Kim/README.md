@@ -19,6 +19,11 @@ https://itnext.io/cks-exam-series-4-crash-that-apiserver-5f4d3d503028
 ## 05  ImagePolicyWebhook
 https://itnext.io/cks-exam-series-5-imagepolicywebhook-8d09f1ceee70
 
+##  CertificateSigningRequests
+https://itnext.io/cks-exam-series-6-users-and-certificatesigningrequests-368a5b2c6a3f
+
+##  07 ServiceAccount Tokens
+https://itnext.io/cks-exam-series-7-serviceaccount-tokens-1158c93612d4
 -----
 
 
