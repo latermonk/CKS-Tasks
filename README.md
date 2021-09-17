@@ -1,3 +1,22 @@
+# Ref
+
+https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist
+
+
+https://github.com/ibrahimjelliti/CKSS-Certified-Kubernetes-Security-Specialist
+
+
+
+
+
+
+
+
+
+
+
+
+
 #   k8s编译
 https://docs.microsoft.com/zh-cn/virtualization/windowscontainers/kubernetes/compiling-kubernetes-binaries    
 https://github.com/Microsoft/SDN/tree/master/Kubernetes/linux/vagrant        
