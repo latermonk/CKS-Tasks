@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: test
+  labels:    #添加此行
+    cks1:  amazing  #添加此行
+    team: killer-sh  #添加此行
+spec: {}
+status: {}
