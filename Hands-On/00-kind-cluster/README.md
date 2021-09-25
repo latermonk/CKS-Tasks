@@ -17,3 +17,12 @@
  ```
 - follow the asciinema instructions from local file "kind-create-cluster.asc" or https://asciinema.org/a/368118
 
+
+
+
+
+```
+curl https://docs.projectcalico.org/manifests/calico.yaml -O
+kubectl apply -f calico.yaml
+
+```
