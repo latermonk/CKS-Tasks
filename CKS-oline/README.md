@@ -9,3 +9,17 @@ https://github.com/killer-sh/cks-course-environment
 
 
 
+#  kind cluster 
+
+
+```
+
+kind create cluster --config kind-1m3w-nocni.yaml
+
+```
+
+
+```
+1
+```
+
