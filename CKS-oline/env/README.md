@@ -5,11 +5,18 @@
 
 kind create cluster --config kind-1m3w-nocni.yaml
 
+
+https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-oline/env/kind-1m3w-nocni.yaml
+
 ```
 
 
 ```
 kubectl apply -f calico.yaml
+
+https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-oline/env/calico.yaml
+
+
 ```
 
 
