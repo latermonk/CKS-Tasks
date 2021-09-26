@@ -1,3 +1,11 @@
+#  k   cheetsheet
+
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/   
+
+
+
+
+
 #  kind cluster for  cks
 
 
