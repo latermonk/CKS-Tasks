@@ -30,7 +30,7 @@ install  kind-linux-amd64 /usr/local/bin/kind
 
 ```
 
-wget https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-oline/env/kind-1m3w-nocni.yaml
+wget https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-oline/00-env/kind-1m3w-nocni.yaml
 
 kind create cluster --config kind-1m3w-nocni.yaml
 
@@ -40,7 +40,7 @@ kind create cluster --config kind-1m3w-nocni.yaml
 
 ```
 
-wget https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-oline/env/calico.yaml
+wget https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-oline/00-env/calico.yaml
 
 
 kubectl apply -f calico.yaml
