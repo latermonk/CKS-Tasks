@@ -15,4 +15,10 @@ curl "http://metadata.google.internal/computeMetadata/v1/instance/disks/" -H "Me
 ```
 
 
+#  Protect Node Metadata via NetworkPolicy
+
+
+deny.yaml    
+
+accept.yaml
 
