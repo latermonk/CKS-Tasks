@@ -98,3 +98,69 @@ curl  https://192.168.211.40:32300/service1 -kv
 
 
 ```
+
+
+
+
+```
+
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
+
+ls
+
+k create secret tls secure-ingress --cert=cert.pem --key=key.pem
+
+k get sec
+
+ k get secret
+ 
+```
+
+
+```
+ vim secure-ingress.yaml
+```
+```
+kind: Ingress
+metadata:
+  name: secure-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+  - hosts:
+      - secure-ingress.com
+    secretName: secure-ingress
+  rules:
+  - host: secure-ingress.com  
+    http:
+      paths:
+      - path: /service1
+        pathType: Prefix
+        backend:
+          service:
+            name: service1
+            port:
+              number: 80
+
+      - path: /service2
+        pathType: Prefix
+        backend:
+          service:
+            name: service2
+            port:
+              number: 80
+```
+
+
+```
+k apply -f secure-ingress.yaml 
+```
+
+```
+curl  https://secure-ingress.com:32300/service2 -kv --resolv secure-ingress.com:32300:192.168.211.41     
+
+```
+
+
+
