@@ -81,3 +81,20 @@ k expose pod pod2 --port 80 --name service2
 curl  http://192.168.211.40:31459/service1
 
 curl  http://192.168.211.40:31459/service2
+
+
+
+
+---
+
+
+
+
+#  secure ingress
+
+
+```
+curl  https://192.168.211.40:32300/service1 -kv
+
+
+```
