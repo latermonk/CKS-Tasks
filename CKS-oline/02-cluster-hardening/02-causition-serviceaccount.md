@@ -228,3 +228,18 @@ root@master:~/cks/serviceaccount# k edit pod accessor
 
 
 
+#  Limit ServiceAccounts using RBAC
+
+```
+root@master:~/cks/serviceaccount# k get pod
+NAME       READY   STATUS    RESTARTS   AGE
+accessor   1/1     Running   0          5m2s
+root@master:~/cks/serviceaccount# k auth can-i delete secrets --as system:serviceaccount:default:accessor
+no
+root@master:~/cks/serviceaccount# k create clusterrolebinding accessor --clusterrole edit --serviceaccount default:accessor
+clusterrolebinding.rbac.authorization.k8s.io/accessr created
+root@master:~/cks/serviceaccount# k auth can-i delete secrets --as system:serviceaccount:default:accessor
+yes
+
+
+```
