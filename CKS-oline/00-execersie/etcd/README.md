@@ -18,3 +18,15 @@ ETCDCTL_API=3 etcdctl \
 get /registry/secrets/default/secret-name
 
 ```
+
+
+
+
+
+所有secret都加密
+```
+k get secrets -A -oyaml |k replace -f  -
+
+k get secret -A -oyaml | kubectl replace -f -
+
+```
