@@ -1,3 +1,15 @@
+#  考试技巧
+
+```
+k delete po build-observer --grace-period=0 --force
+
+```
+
+
+
+
+
+
 # Ref
 
 
