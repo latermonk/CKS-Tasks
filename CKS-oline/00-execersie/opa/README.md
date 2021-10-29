@@ -124,8 +124,123 @@ spec:
  
  # 03 Enforce Namespace Labels
  
+ ```
+ k apply -f template_label.yaml
+ 
+ k apply -f all_ns_must_have_cks.yaml
+ 
+ ```
  
  
+ ```
+ k describe K8sRequiredLabels ns-must-have-cks
+ ```
+ 
+ 
+ 编辑default ns 
+ 
+```
+ k  edit ns default
+```
+ 
+ 
+ ```
+ apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: "2021-05-14T08:37:43Z"
+  labels:   # 添加此行
+    cks: amazing   # 添加此行
+  name: default
+  resourceVersion: "86550"
+  uid: 773025bb-2f60-40f9-a10d-924c21e45016
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
+ ```
+
+
+```
+k describe K8sRequiredLabels ns-must-have-cks
+
+```
+
+
+创建ns  失败
+
+```
+k create ns test
+
+```
+
+
+
+修改ns yaml文件
+
+```
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRequiredLabels
+metadata:
+  name: ns-must-have-cks
+spec:
+  match:
+    kinds:
+      - apiGroups: [""]
+        kinds: ["Namespace"]
+  parameters:
+    labels: ["cks","team"]  #修改此行
+    
+```
+
+
+再次创建
+```
+k apply -f all_ns_must_have_cks.yaml 
+
+```
+
+
+再次测试
+```
+k create ns test
+```
+
+```
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: test
+spec: {}
+status: {}
+root@master:~/cks/opa# k create ns test -o yaml --dry-run=client > ns.yaml
+
+oot@master:~/cks/opa# vim ns.yaml 
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: test
+  labels:    #添加此行
+    cks: amazing  #添加此行
+    team: killer-sh  #添加此行
+spec: {}
+status: {}
+
+```
+
+```
+k create -f ns.yaml 
+
+
+```
+
+
+
+
+
 
 
 #  04 Enforce Deployment replica count
