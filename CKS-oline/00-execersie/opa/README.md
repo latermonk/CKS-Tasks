@@ -107,7 +107,7 @@ spec:
  
  
  ```
- template.yaml
+ k apply -f template.yaml
  
  ```
  
@@ -124,5 +124,5 @@ spec:
  
 
 
-#  03
+#  03 Enforce Namespace Labels
 
