@@ -126,3 +126,33 @@ spec:
 
 #  03 Enforce Namespace Labels
 
+
+ ```
+ k apply -f template_replicas.yaml 
+ 
+ k apply -f all_deployment_must_have_min_replicacount.yaml 
+ 
+ 
+ ```
+ 
+ ```
+ k describe k8sminreplicacount deployment-must-have-min-replicas
+ 
+ ```
+ 
+ 
+ 测试  :  无法创建
+ ```
+ k create deploy test --image=nginx
+ ```
+ 
+  
+ 测试2  :  加上replicas参数就可以创建
+ ```
+ k create deploy test --image=nginx --replicas=2
+ ```
+ 
+ 
+ ---
+ END 
+ 
