@@ -122,9 +122,13 @@ spec:
  
  
  
+ # 03 Enforce Namespace Labels
+ 
+ 
+ 
 
 
-#  04 Enforce Namespace Labels
+#  04 Enforce Deployment replica count
 
 
  ```
