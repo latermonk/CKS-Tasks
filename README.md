@@ -1,3 +1,11 @@
+# mk cluster
+
+```
+minikube start --nodes 2 -p multinode-demo
+
+```
+
+
 #  考试技巧
 
 ```
