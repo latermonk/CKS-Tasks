@@ -1,5 +1,8 @@
 # mk cluster
 
+https://minikube.sigs.k8s.io/docs/tutorials/multi_node/
+
+
 ```
 minikube start --nodes 2 -p multinode-demo
 
