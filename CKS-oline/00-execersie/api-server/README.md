@@ -21,3 +21,14 @@ curl https://127.0.0.1:54278  --cacert ca --cert cert --key key
 ```
 openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text
 ```
+
+
+
+#   NodeRestriction
+
+```
+--enable-admission-plugins=NodeRestriction
+
+```
+
+
