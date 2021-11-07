@@ -36,7 +36,7 @@ https://kubernetes.io/docs/concepts/policy/pod-security-policy/
 
 
 
-#  k explain PodSecurityPolicy.spec --recursive
+#   k  explain PodSecurityPolicy.spec --recursive
 
 ```
 k explain PodSecurityPolicy.spec --recursive
