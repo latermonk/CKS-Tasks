@@ -31,4 +31,7 @@ openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text
 
 ```
 
+# PodSecurityPolicy 
+https://kubernetes.io/docs/concepts/policy/pod-security-policy/
+
 
