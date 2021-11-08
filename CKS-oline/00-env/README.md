@@ -30,6 +30,9 @@ install  kind-linux-amd64 /usr/local/bin/kind
 
 ```
 
+apt update -y &&  apt install docker.io -y 
+
+
 wget https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-oline/00-env/kind-1m3w-nocni.yaml
 
 kind create cluster --config kind-1m3w-nocni.yaml
