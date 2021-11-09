@@ -78,4 +78,11 @@ cat 10 | strings |grep kugou -A20 -B20    #  一定要注意  -A  -B 参数的�
 
 
 
-#  strace  proc
+#  strace  proc   env
+
+
+```
+cat  /proc/912111/environ
+```
+
+
