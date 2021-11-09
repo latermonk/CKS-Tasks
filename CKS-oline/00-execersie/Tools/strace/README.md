@@ -55,5 +55,14 @@ tail   fd
 ```
 
 
+测试：
+
+```
+
+k create secret generic credit-card --from-literal cc=111222333444 
+
+tail   fd  | strings | grep  111222333444
+```
+
 
 #  strace  proc
