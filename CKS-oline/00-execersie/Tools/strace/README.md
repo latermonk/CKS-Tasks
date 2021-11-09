@@ -61,7 +61,7 @@ tail   fd
 
 k create secret generic credit-card --from-literal cc=111222333444 
 
-tail   fd  | strings | grep  111222333444
+cat    fd  | strings | grep  111222333444
 ```
 
 
