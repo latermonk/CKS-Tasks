@@ -17,6 +17,18 @@ crictl pods -id 7a864406b9794
 
 
 
+ vim falco_rules.yaml
+ 
+ 
+ ```
+ chnage rules  here
+ 
+ ```
+
+
+
+
+---
 
 
 #  crictl 
