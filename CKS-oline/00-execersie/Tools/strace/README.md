@@ -6,3 +6,18 @@ We then took one pod-id to find it's containers using crictl ps
 And finally we used crictl inspect to find the process name, which is collector1-process
 
 ```
+
+
+
+
+
+```
+
+
+strace   ls 
+
+
+
+
+strace  -cw ls /
+```
