@@ -52,6 +52,14 @@ crictl pods -id 7a864406b9794
   
   ```
 
+修改规则：
+
+```
+grep -r "A shell was spawned in a container with an attached terminal" *
+
+```
+
+
 
 
 
