@@ -21,3 +21,13 @@ strace   ls
 
 strace  -cw ls /
 ```
+
+
+
+```
+strace cat test
+
+strace -cw cat test
+
+```
+
