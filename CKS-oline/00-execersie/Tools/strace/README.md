@@ -65,4 +65,17 @@ cat    fd  | strings | grep  111222333444
 ```
 
 
+测试2：
+
+```
+k create secret generic hello --from-literal=kugou=947
+
+cat 10 | strings |grep kugou -A20 -B20    #  一定要注意  -A  -B 参数的使用
+
+
+```
+
+
+
+
 #  strace  proc
