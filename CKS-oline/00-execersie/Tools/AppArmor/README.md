@@ -77,3 +77,13 @@ docker run --security-opt apparmor=docker-nginx  -d gninx
 
 exec 进去发现诸多限制
 
+
+
+#  k8s
+
+```
+container.apparmor.security.beta.kubernetes.io/<container_name>  :  localhost/app-rule-name 
+
+```
+
+
