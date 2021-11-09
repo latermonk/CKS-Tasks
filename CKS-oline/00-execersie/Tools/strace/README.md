@@ -31,3 +31,6 @@ strace -cw cat test
 
 ```
 
+#   strace  etcd
+
+#  strace  proc
