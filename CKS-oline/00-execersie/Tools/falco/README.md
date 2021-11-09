@@ -31,6 +31,28 @@ crictl pods -id 7a864406b9794
  ```
 
 
+一条规则：
+```
+- rule: Outbound or Inbound Traffic not to Authorized Server Process and Port
+  desc: Detect traffic that is not to authorized server process and port.
+  condition: >
+    allowed_port and
+    inbound_outbound and
+    container and
+    container.image.repository in (allowed_image) and
+    not proc.name in (authorized_server_binary) and
+    not fd.sport in (authorized_server_port)    
+  output: >
+    Network connection outside authorized port and binary
+    (command=%proc.cmdline connection=%fd.name user=%user.name user_loginuid=%user.loginuid container_id=%container.id
+    image=%container.image.repository)    
+  priority: WARNING
+  tags: [network]
+  
+  
+  ```
+
+
 
 
 ---
