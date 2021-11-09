@@ -6,6 +6,15 @@
 ## use
 
 
+```
+cat /var/log/syslog | grep falco | grep nginx | grep process
+
+crictl ps -id 7a5ea6a080d1
+
+crictl pods -id 7a864406b9794
+
+```
+
 
 
 
