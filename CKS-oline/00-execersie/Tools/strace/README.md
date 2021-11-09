@@ -33,4 +33,27 @@ strace -cw cat test
 
 #   strace  etcd
 
+通过 /proc 找到 etcd 的db文件 可以查看 etcd内部的明文
+
+
+```
+ps -ef |grep etcd   找到进程ID
+
+cd /proc/process-id-you-just-find
+
+cd /proc/process-id-you-just-find/fd
+
+ls -la
+
+/proc/process-id-you-just-find   
+
+
+tail   fd 
+
+
+
+```
+
+
+
 #  strace  proc
