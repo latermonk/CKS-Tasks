@@ -82,7 +82,8 @@ exec 进去发现诸多限制
 #  k8s
 
 ```
-container.apparmor.security.beta.kubernetes.io/<container_name>  :  localhost/app-rule-name 
+annotations:
+    container.apparmor.security.beta.kubernetes.io/secure : localhost/docker-nginx 
 
 ```
 
