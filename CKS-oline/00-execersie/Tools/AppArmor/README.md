@@ -67,6 +67,13 @@ aa-logprof
 #   docker 
 
 ```
+apparmor_parse docker-nginx
+```
+
+```
 docker run --security-opt apparmor=docker-nginx  -d gninx    
 ```
+
+
+exec 进去发现诸多限制
 
