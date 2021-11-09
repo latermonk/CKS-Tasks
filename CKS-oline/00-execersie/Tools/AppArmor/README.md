@@ -19,5 +19,5 @@ apparmor_parser -q ./profile
 #  安装工具集
 
 ```
-apt install apparmor-utils
+apt install apparmor-utils -y
 ```
