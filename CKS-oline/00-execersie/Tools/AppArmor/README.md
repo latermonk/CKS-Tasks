@@ -59,3 +59,14 @@ cat usr.bin.curl
 ```
 aa-logprof
 ```
+
+
+---
+
+
+#   docker 
+
+```
+docker run --security-opt apparmor=docker-nginx  -d gninx    
+```
+
