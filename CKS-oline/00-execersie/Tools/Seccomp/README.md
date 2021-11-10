@@ -14,3 +14,15 @@ docker run --security-opt seccomp=default.json nginx
 
 ```
 
+
+
+#  for k8s
+
+
+```
+mkdir /var/lib/kubelet/seccomp
+
+cat /var/lib/kubelet/seccomp/default.json 
+```
+
+
