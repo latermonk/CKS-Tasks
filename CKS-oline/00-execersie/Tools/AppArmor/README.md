@@ -93,3 +93,26 @@ annotations:
 ```
 
 
+
+
+pod
+
+ ```
+ kind: Pod
+metadata:
+  creationTimestamp: null
+  annotations:    #添加此行
+    container.apparmor.security.beta.kubernetes.io/secure: localhost/hello  #添加此行
+  labels:
+    run: secure
+  name: secure
+spec:
+  containers:
+  - image: nginx
+    name: secure
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+
+ ```
