@@ -35,7 +35,7 @@ metadata:
     run: secure
   name: secure
 spec:
-  securityContext:
+  securityContext:                     # spec添加此模块儿
     seccompProfile:
       type: Localhost
       localhostProfile: default.json
