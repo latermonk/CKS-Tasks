@@ -102,7 +102,8 @@ pod
 metadata:
   creationTimestamp: null
   annotations:    #添加此行
-    container.apparmor.security.beta.kubernetes.io/secure: localhost/hello  #添加此行
+    container.apparmor.security.beta.kubernetes.io/secure: localhost/hello  #添加此行   不行
+    container.apparmor.security.beta.kubernetes.io/secure: localhost/hello  #添加此行    可以
   labels:
     run: secure
   name: secure
