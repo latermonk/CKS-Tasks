@@ -26,3 +26,24 @@ cat /var/lib/kubelet/seccomp/default.json
 ```
 
 
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: secure
+  name: secure
+spec:
+  securityContext:
+    seccompProfile:
+      type: Localhost
+      localhostProfile: default.json
+  containers:
+  - image: nginx
+    name: secure
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
+```
