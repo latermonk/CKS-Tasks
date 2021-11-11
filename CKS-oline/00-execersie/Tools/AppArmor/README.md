@@ -163,11 +163,11 @@ spec:
       labels:
         app: apparmor
     spec:
-      nodeSelector:
-        security: apparmor
+      nodeSelector:                    #  add here
+        security: apparmor 
       containers:
       - image: nginx:1.19.2
-        name: c1
+        name: c1                        #  container -
         resources: {}
 status: {}
 ```
