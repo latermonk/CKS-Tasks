@@ -117,3 +117,20 @@ spec:
 status: {}
 
  ```
+ 
+ 
+ 
+ #  解释
+ 
+ 
+ ```
+ 
+ 
+ container.apparmor.security.beta.kubernetes.io/c1: localhost/very-secure
+ 
+ 
+ c1  是容器名字
+ 
+ localhost/very-secure  是apparmor_profile name
+ 
+ ```
