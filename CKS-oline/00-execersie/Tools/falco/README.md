@@ -77,3 +77,21 @@ install  crictl /usr/local/bin
 
 ```
 
+
+
+
+---
+
+
+#  
+
+```
+
+
+ crictl ps -id b1339d5cc2de
+ 
+ crictl pods -id 595af943c3245
+ 
+```
+
+
