@@ -134,3 +134,40 @@ status: {}
  localhost/very-secure  是apparmor_profile name
  
  ```
+
+
+
+
+#   deploument
+
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: apparmor
+  name: apparmor
+  annotations:
+    container.apparmor.security.beta.kubernetes.io/c1: localhost/ping
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apparmor
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: apparmor
+    spec:
+      nodeSelector:
+        security: apparmor
+      containers:
+      - image: nginx:1.19.2
+        name: c1
+        resources: {}
+status: {}
+```
