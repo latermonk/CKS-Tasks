@@ -27,3 +27,16 @@ apt-get -y install sysdig
 
 ```
 
+
+
+
+#  use
+
+```
+
+sysdig -l 
+
+sysdia -M 30 -p "*%evt.time"
+```
+
+
