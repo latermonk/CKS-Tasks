@@ -89,3 +89,14 @@ cat  /proc/912111/environ
 
 
 
+
+
+#  strace  -cw -p  process-name
+
+```
+ strace  -cw -p  process-name
+ 
+ ```
+ 
+ 
+
