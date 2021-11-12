@@ -1,2 +1,29 @@
 #   Immutable Root FileSystem
 
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  containers:
+  - image: nginx
+    securityContext: 
+      readOnlyRootFilesystem: true
+    name: nginx
+    resources: {}
+    volumeMounts:
+    - name: tmp
+      mountPath: /tmp
+  volumes:
+    - name: tmp
+      emptyDir: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+
+```
+
