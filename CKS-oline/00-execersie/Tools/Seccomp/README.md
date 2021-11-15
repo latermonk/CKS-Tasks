@@ -19,6 +19,8 @@ docker run --security-opt seccomp=default.json nginx
 docker run --security-opt seccomp=default-without-write.json  nginx  
 ```
 
+导致无法创建NGINX docker
+
 
 
 
