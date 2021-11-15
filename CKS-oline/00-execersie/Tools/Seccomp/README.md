@@ -13,6 +13,13 @@ seccomp 可以在用户代码中增加一些模块来进行系统调用的拦截
 docker run --security-opt seccomp=default.json nginx
 
 ```
+删除 syscall中的 write 调用
+
+```
+docker run --security-opt seccomp=default-without-write.json  nginx  
+```
+
+
 
 
 
