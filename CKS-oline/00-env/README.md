@@ -12,6 +12,12 @@ apt install bash-completion
 
 snap install kubectl --classic
 
+
+```
+```
+
+
+
 source <(kubectl completion bash)
 
 alias k=kubectl
