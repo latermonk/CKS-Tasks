@@ -66,6 +66,14 @@ aa-logprof
 ```
 
 
+安装了 utils 之后可以用的两条命令：
+
+* aa-genprof   生成配置文件    
+* aa-logprof   修改配置文件   
+ 
+https://documentation.suse.com/zh-cn/sles/15-SP2/html/SLES-all/cha-apparmor-commandline.html#sec-apparmor-commandline-profiling-summary-genprof  
+
+
 ---
 
 
