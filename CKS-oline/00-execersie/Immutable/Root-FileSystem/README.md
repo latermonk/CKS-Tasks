@@ -1,5 +1,12 @@
 #   Immutable Root FileSystem
 
+
+
+https://kubernetes.io/docs/concepts/storage/volumes/#emptydir
+
+
+
+
 ```
 apiVersion: v1
 kind: Pod
@@ -11,14 +18,14 @@ metadata:
 spec:
   containers:
   - image: nginx
-    securityContext: 
-      readOnlyRootFilesystem: true
+    securityContext:                          #   Add
+      readOnlyRootFilesystem: true            # Add
     name: nginx
     resources: {}
-    volumeMounts:
+    volumeMounts:                                   # Add
     - name: tmp
       mountPath: /tmp
-  volumes:
+  volumes:                                   # Add
     - name: tmp
       emptyDir: {}
   dnsPolicy: ClusterFirst
