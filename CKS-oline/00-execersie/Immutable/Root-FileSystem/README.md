@@ -27,3 +27,13 @@ status: {}
 
 ```
 
+
+
+# error
+
+
+```
+2021/11/16 13:14:17 [emerg] 1#1: mkdir() "/var/cache/nginx/client_temp" failed (30: Read-only file system)
+nginx: [emerg] mkdir() "/var/cache/nginx/client_temp" failed (30: Read-only file system)
+
+```
