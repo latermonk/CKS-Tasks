@@ -23,3 +23,12 @@ docker run -i kubesec/kubesec:512c5e0 scan /dev/stdin < pod.yaml
 
 
 ![OpenPolicyAgent](https://raw.githubusercontent.com/latermonk/CKS-Tasks/master/CKS-oline/00-execersie/OPA/_image/OpenPolicyAgent.png)
+
+
+
+
+#  INSTALl
+
+https://github.com/open-policy-agent/opa
+
+
