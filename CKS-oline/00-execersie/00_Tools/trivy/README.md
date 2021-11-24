@@ -2,7 +2,8 @@
 过滤的时候一定要注意大小写！！！
 
 ```
-trivy docker.io/fanux/lvscare:latest |grep "HIGH  | CRITICAL"
+trivy image docker.io/fanux/lvscare:latest |grep -E "HIGH|CRITICAL"
+
 ```
 
 
