@@ -5,3 +5,9 @@ kubectl -n kube-system  get pods  kube-apiserver-i-104a999f -ojsonpath={.spec.vo
 
 ```
 
+
+or
+```
+kubectl get pods NAME -o yaml -n testing | grep "privi.*: true"
+
+```
