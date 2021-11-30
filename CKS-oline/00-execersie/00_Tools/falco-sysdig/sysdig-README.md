@@ -40,3 +40,7 @@ sysdia -M 30 -p "*%evt.time"
 ```
 
 
+```
+ sysdig -M 30 -p "*%evt.time, %user.uid, %proc.name"
+ 
+ ```
